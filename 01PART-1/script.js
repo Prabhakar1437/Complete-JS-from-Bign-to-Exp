@@ -168,7 +168,7 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 
 */
 
-////////////////////////////////////
+/*
 // Strings and Template Literals
 const firstName = 'Jonas';
 const job = 'teacher';
@@ -182,18 +182,18 @@ const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
 
 console.log(`Just a regular string...`);
-
+// Before ES6
 console.log('String with \n\
 multiple \n\
 lines');
-
+//After ES6 
 console.log(`String
 multiple
 lines`);
 
+*/
 
 /*
-
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
 const age = 15;
@@ -214,9 +214,9 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+
 */
 
-////////////////////////////////////
 // Coding Challenge #2
 
 /*
@@ -250,10 +250,10 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
 }
-
+*/
 ////////////////////////////////////
-// Type Conversion and Coercion
-
+// 15 Type Conversion(manually convert one type to another type ) and Coercion(internally convert one type to another type)
+/*
 // type conversion
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
@@ -268,19 +268,23 @@ console.log(String(23), 23);
 console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3);
 console.log('23' / '2');
-
+//+ converted other type to string and - converted string to number
 let n = '1' + 1; // '11'
 n = n - 1;
-console.log(n);
+console.log(n); //10
+*/
 
 ////////////////////////////////////
-// Truthy and Falsy Values
+// Truthy and Falsy Values(not actually false but when I try to convert into boolean it give false)
 
 // 5 falsy values: 0, '', undefined, null, NaN
+// 5 truthy values: '0', ' ', 1, true, []
+
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Jonas'));
-console.log(Boolean({}));
+console.log(Boolean({})); //object
 console.log(Boolean(''));
 
 const money = 100;
@@ -296,14 +300,16 @@ if (height) {
 } else {
   console.log('Height is UNDEFINED');
 }
+  */
 
-////////////////////////////////////
-// Equality Operators: == vs. ===
+
+//Equality Operators: ==(loose)use in type conversion vs. ===(strict)
+
 const age = '18';
 if (age === 18) console.log('You just became an adult :D (strict)');
 
 if (age == 18) console.log('You just became an adult :D (loose)');
-
+//jS  by default  take string as input
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
@@ -319,7 +325,7 @@ if (favourite === 23) { // 22 === 23 -> FALSE
 }
 
 if (favourite !== 23) console.log('Why not 23?');
-
+/*
 ////////////////////////////////////
 // Logical Operators
 const hasDriversLicense = true; // A
