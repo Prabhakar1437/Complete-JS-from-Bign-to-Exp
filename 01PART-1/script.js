@@ -303,8 +303,8 @@ if (height) {
   */
 
 
-//Equality Operators: ==(loose)use in type conversion vs. ===(strict)
-
+// 017 Equality Operators: ==(loose)use in type conversion vs. ===(strict)
+/*
 const age = '18';
 if (age === 18) console.log('You just became an adult :D (strict)');
 
@@ -325,7 +325,9 @@ if (favourite === 23) { // 22 === 23 -> FALSE
 }
 
 if (favourite !== 23) console.log('Why not 23?');
-/*
+
+*/
+
 ////////////////////////////////////
 // Logical Operators
 const hasDriversLicense = true; // A
@@ -349,8 +351,9 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive...');
 }
-*/
 
+
+/*
 ////////////////////////////////////
 // Coding Challenge #3
 
